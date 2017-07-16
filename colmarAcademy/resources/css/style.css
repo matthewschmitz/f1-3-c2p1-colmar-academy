@@ -1,0 +1,436 @@
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #4A4A4A;
+}
+
+/* HEADER SECTION CSS */
+
+header {
+  height: 4rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 2rem;
+  vertical-align: top;
+}
+
+header .tabletMenu {
+  display: none;
+}
+
+header div h1 {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+header nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+header span {
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 0 3rem;
+  }
+
+  header div h1 {
+    display: none;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .tabletMenu {
+    display: inline-block;
+  }
+}
+
+/* BANNER SECTION CSS */
+
+.banner {
+  background-color: #D8D8D8;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.banner img {
+  width: 60%;
+  vertical-align: middle;
+  margin-right: 2.5rem;
+}
+
+.bannerContent {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+}
+
+.banner h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.banner h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.button {
+  width: 90%;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  background-color: #4A4A4A;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    padding: 0;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .bannerContent {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5%;
+    width: 90%;
+  }
+
+  .banner img {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    height: 15rem;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+/* THESIS and ARTICLES SECTION CSS */
+
+.thesis h1 {
+  display: block;
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.thesis,
+.articles {
+  height: auto;
+  overflow: hidden;
+  background-color: #F3F5F5;
+}
+
+.supporting {
+  float: right;
+  width: 26.4375rem;
+}
+
+.supportingItem {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.supportingItem:hover {
+  background-color: #D8D8D8;
+}
+
+.thesis .supportingItem {
+  border: none;
+}
+
+.articles .supportingItem:first-child {
+  padding-top: 2rem;
+}
+
+.thesis .supportingItem {
+  padding: none;
+}
+
+.supportingItem img {
+  width: 35%;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.mobileOnlyImage {
+  display: none;
+}
+
+.supportingItemInfo {
+  width: 55%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.supportingItemInfo h2,
+.supportingItemInfo p,
+.readMore {
+  display: inline-block;
+}
+
+.supportingItemInfo h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.supportingItemInfo p {
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  color: blue;
+}
+
+.lead {
+  width: auto;
+  overflow: hidden;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-right: 1px solid lightgrey;
+}
+
+.thesis .lead {
+  padding-top: 0rem;
+  border: none;
+}
+
+.lead img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.lead video {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.lead h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.lead p {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .articles .lead {
+    display: none;
+  }
+
+  .articles .supporting {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .articles .mobileOnlyImage {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 10rem;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: middle;
+  }
+
+  .desktopOnlyImage {
+    display: none;
+  }
+
+  .supportingItemInfo {
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .supportingItemInfo h2,
+  .supportingItemInfo p {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .thesis {
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .thesis .supporting {
+    display: none;
+  }
+
+  .thesis .lead h2,
+  .thesis .lead p {
+    display: none;
+  }
+
+}
+
+/* FEATURES SECTION CSS */
+
+.features {
+  background-color: #D8D8D8;
+  padding: 2rem 0;
+}
+
+.features h1 {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.featureDisplay {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+#topFeatureDisplay {
+  margin-bottom: 1rem;
+}
+
+.feature {
+  display: inline-block;
+  width: 15rem;
+  vertical-align: middle;
+}
+
+#middle {
+  margin: 0 2rem;
+}
+
+.feature img {
+  max-width: 100%;
+  display: block;
+}
+
+.courseDescription {
+  padding: 1rem 1rem 1.5rem 1rem;
+  text-align: left;
+  background-color: white;
+}
+
+.topMiddleFeature .courseDescription {
+  padding-bottom: 0.5rem;
+}
+
+.courseDescription h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.courseDescription p {
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
+.bottomleft .courseDescription {
+  padding-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .features {
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .feature img {
+    display: none;
+  }
+
+  .featureDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .feature,
+  #middle {
+    width: 90%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .feature p {
+    display: none;
+  }
+
+  .courseDescription,
+  .topMiddleFeature .courseDescription,
+  .bottomleft .courseDescription {
+    background-color: #D8D8D8;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  .courseDescription:hover,
+  .topMiddleFeature .courseDescription:hover,
+  .bottomleft .courseDescription:hover {
+    background-color: #F3F5F5;
+  }
+
+  #topFeatureDisplay {
+    margin-bottom: 0;
+  }
+
+  .feature h2 {
+    margin-bottom: 0;
+  }
+
+}
+
+/* FOOTER CSS */
+
+footer {
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
+  background-color: white;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav a {
+  display: inline-block;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    border-top: none;
+  }
+
+  footer nav {
+    display: none;
+  }
+}
